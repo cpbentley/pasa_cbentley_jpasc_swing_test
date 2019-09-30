@@ -71,7 +71,7 @@ public abstract class TestJPascSwingAbstract extends BentleyTestCase {
       config.setLevelGlobal(ITechLvl.LVL_03_FINEST);
       config.setFlagTag(ITechTags.FLAG_17_PRINT_TEST, true);
       C5Ctx c5 = new C5Ctx(uc);
-      sc = new SwingCtx(uc);
+      sc = new SwingCtx(c5);
       pc = new PCoreCtx(uc, c5);
       imgc = new ImgCtx(sc);
       gifc = new SwingGifCtx(sc, imgc);

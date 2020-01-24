@@ -10,7 +10,7 @@ import java.util.Locale;
 import pasa.cbentley.core.src4.helpers.BasicPrefs;
 import pasa.cbentley.core.src4.interfaces.IPrefs;
 import pasa.cbentley.core.src4.logging.BaseDLogger;
-import pasa.cbentley.core.src4.logging.IConfig;
+import pasa.cbentley.core.src4.logging.IDLogConfig;
 import pasa.cbentley.core.src4.logging.ITechLvl;
 import pasa.cbentley.core.src4.logging.ITechTags;
 import pasa.cbentley.core.src5.ctx.C5Ctx;
@@ -34,7 +34,7 @@ public abstract class TestJPascSwingAbstract extends BentleyTestCase {
    /**
     * Log Config
     */
-   protected IConfig        config;
+   protected IDLogConfig        config;
 
    private ImgCtx imgc;
 

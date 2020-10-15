@@ -21,9 +21,9 @@ import pasa.cbentley.swing.SwingPrefs;
 import pasa.cbentley.swing.ctx.SwingCtx;
 import pasa.cbentley.swing.gif.ctx.SwingGifCtx;
 import pasa.cbentley.swing.images.ctx.ImgCtx;
-import pasa.cbentley.testing.BentleyTestCase;
+import pasa.cbentley.testing.engine.TestCaseBentley;
 
-public abstract class TestJPascSwingAbstract extends BentleyTestCase {
+public abstract class TestJPascSwingAbstract extends TestCaseBentley {
 
    protected PCoreCtx       pc;
 

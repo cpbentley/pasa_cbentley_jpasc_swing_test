@@ -34,30 +34,22 @@ public abstract class TestJPascSwingAbstract extends TestCaseBentley {
    /**
     * Log Config
     */
-   protected IDLogConfig        config;
+   protected IDLogConfig    config;
 
-   private ImgCtx imgc;
+   private ImgCtx           imgc;
 
-   private SwingGifCtx gifc;
-
-   /**
-    * by default hides sysout when test is valid
-    */
-   public TestJPascSwingAbstract(boolean b) {
-      super(b);
-   }
+   private SwingGifCtx      gifc;
 
    /**
     * by default hides sysout when test is valid
     */
    public TestJPascSwingAbstract() {
-      super(true);
    }
 
    public void setupAbstract() {
 
       setUpNoConnection();
-      
+
       BasicPrefs prefs = new BasicPrefs(uc);
       pc.setPrefs(prefs);
       //don't auto lock wallet on connection
@@ -76,12 +68,12 @@ public abstract class TestJPascSwingAbstract extends TestCaseBentley {
       imgc = new ImgCtx(sc);
       gifc = new SwingGifCtx(sc, imgc);
       psc = new PascalSwingCtx(pc, sc, gifc);
-      
+
       BasicPrefs prefs = new BasicPrefs(uc);
       pc.setPrefs(prefs);
-     
+
       sc.setPrefs(prefs);
-      
+
       //we need to load strings in the bundle
       ArrayList<String> list = new ArrayList<String>();
       sc.addI18NKey(list);
@@ -89,9 +81,7 @@ public abstract class TestJPascSwingAbstract extends TestCaseBentley {
       pc.addI18NKey(list);
       gifc.addI18NKey(list);
       sc.setBundleList(list);
-      
-    
-      
+
       String language = "en";
       String country = "US";
       Locale currentLocale = new Locale(language, country);
